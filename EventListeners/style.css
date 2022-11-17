@@ -22,3 +22,8 @@ body {
     height: 6rem;
     background-color: hsl(0, 0%, 90%);
   }
+
+  .button{
+    margin-left: 50%;
+    margin-right: 50%;
+  }
