@@ -4,9 +4,14 @@
 
 .christmasList {
     text-align: center;
+    background-color: darkgreen;
 }
 
 .listDisplay{
     margin-left: 50%;
     margin-right: 50%;
+}
+
+.listItem {
+    background-color: brown;
 }
