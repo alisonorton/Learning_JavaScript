@@ -4,6 +4,7 @@ const addButton = document.querySelector(".addButton");
 //var listInput = document.getElementById('list').value;
 var list = [];
 
+//Displaying the list
 addButton.addEventListener('click', (e) => {
     list.push(document.getElementById('listInput').value);
     displayItem(list);
@@ -12,17 +13,7 @@ addButton.addEventListener('click', (e) => {
 for(let i = 0; i < list.length; i ++){
     console.log(list[i])
 }
-
-function displayList(list){
-    var ul = document.getElementById('listDisplay');
-
-    for(let i = 0; i < list.length; i++){
-        var item = list[i]
-        var li = document.createElement('li');
-        li.appendChild(document.createTextNode(item));
-        ul.appendChild(li);
-    }
-}
+//Function to display list items
 
 function displayItem(list){
     var ul = document.getElementById('listDisplay');
@@ -31,6 +22,22 @@ function displayItem(list){
     li.appendChild(document.createTextNode(item));
     ul.appendChild(li);
 
+}
+
+const backgroundMusic = document.querySelector(".musicBtn");
+
+backgroundMusic.addEventListener('click', () => {
+    playPause();
+})
+
+function playPause(){
+    const audio = document.querySelector(".background_music");
+    if(audio.paused){
+        audio.play();        
+    }
+    else{
+        audio.pause();
+    }
 }
 
 
