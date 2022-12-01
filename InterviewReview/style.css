@@ -1,4 +1,8 @@
-div {
+.display {
+    display: flex;
+}
+
+.circle {
     background-color: blue;
     width: 30px;
     height: 30px;
@@ -7,7 +11,8 @@ div {
     text-align: center;
     vertical-align: middle;
     margin: 5px;
-
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
