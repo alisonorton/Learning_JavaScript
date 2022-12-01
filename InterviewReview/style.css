@@ -1,0 +1,13 @@
+div {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px;
+
+    border-radius: 50%;
+    display: inline-block;
+}
