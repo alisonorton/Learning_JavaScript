@@ -1,7 +1,6 @@
 //Adding user input to the Christmas list
 
 const addButton = document.querySelector(".addButton");
-//var listInput = document.getElementById('list').value;
 var list = [];
 
 //Displaying the list
