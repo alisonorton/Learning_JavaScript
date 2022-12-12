@@ -1,7 +1,7 @@
 
 const button = document.getElementById("button");
 const main = document.querySelector("main");
-const displayDivs = document.getElementById("display")
+const displayDivs = document.getElementById("display");
 
 function display(num){
     for(let i = 1; i <= num; i++){
