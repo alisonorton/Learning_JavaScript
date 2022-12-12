@@ -18,6 +18,8 @@
 
 .wholeList {
     background-color: darkgreen;
+    border: 2px solid white;
+    border-radius: 25px;
     padding: 10px;
     margin-left: 15%;
     margin-right: 15%;
@@ -32,7 +34,6 @@
 
 .addButton {
     margin-top: 5%;
-
 }
 
 .music {
@@ -54,11 +55,16 @@
 
 .item {
     background-color: white;
+    text-align: left;
     color: black;
     height: 25px;
-    width: 100px;
+    width: 160px;
+    vertical-align: middle;
     border-radius: 25px;
-    text-align: left;
+
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
     padding-left: 15px;
     margin: 10px;
 
