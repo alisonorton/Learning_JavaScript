@@ -3,12 +3,15 @@
 const addButton = document.getElementById("addButton");
 const displayButton = document.getElementById("displayButton");
 const displayList = document.getElementById("listDisplay");
+
 var list = [];
 
 //Displaying the list
 addButton.addEventListener('click', () => {
     const item = document.getElementById('listInput').value
     list.push(item);
+    const input = document.getElementById("listInput");
+    input.value = "";
 });
 
 displayButton.addEventListener('click', () => {
@@ -23,9 +26,7 @@ displayButton.addEventListener('click', () => {
 //Function to display list items
 
 function displayItem(list){
-    console.log("in the function")
     for(let i = 0; i < list.length; i++){
-        console.log("in the list " + list[i].value);
         let item = document.createElement("div");
         item.classList.add("item");
         let text = document.createElement("p");
