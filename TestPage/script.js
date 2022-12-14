@@ -31,7 +31,6 @@ function displayItem(list){
         item.classList.add("item");
         let text = document.createElement("p");
         item.textContent = list[i];
-        
         item.appendChild(text);
         displayList.appendChild(item);
     }
